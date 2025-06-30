@@ -1,0 +1,36 @@
+.input-wrapper {
+  & > div {
+    display: flex;
+    gap: 1rem;
+  }
+
+  & input {
+    flex: 1;
+    align-items: center;
+    border-radius: 0.75rem;
+    border: 2px solid var(--border-primary);
+    background-color: var(--bg-secondary);
+    padding: 0 1.125rem;
+    font: 400 1rem/1.4 var(--font-family);
+
+    &:hover {
+      border-color: var(--border-hover);
+    }
+    &:focus {
+      border-color: var(--color-brand);
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .input-wrapper {
+    & > div {
+      flex-direction: column;
+    }
+
+    & input {
+      padding: 0.6875rem 1.125rem;
+    }
+  }
+}

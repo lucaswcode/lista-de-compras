@@ -4,13 +4,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/icon-logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuickList - Lista de Compras</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <div class="logo">
+      <img src="./assets/logo.svg" alt="Logo QuickList" />
+    </div>
+    <main class="container">
+      <div>
+        <a href="#" class="go-back">Voltar</a>
+        <h1>Compras da semana</h1>
+      </div>
+
+      <form>
+        <div class="input-wrapper">
+          <div>
+            <input
+              type="text"
+              class="addItem"
+              id="addItem"
+              placeholder="Adicionar um novo item"
+            />
+            <button type="submit" class="btnItem">Adicionar item</button>
+          </div>
+        </div>
+        <div class="list-wrapper">
+          <ul role="listitem" id="list">
+            <li>
+              <input type="checkbox" name="item" id="item" />
+              <span>Pão de Forma</span>
+              <img
+                src="./assets/icons/bin.svg"
+                alt="Excluir item"
+                title="Excluir item"
+              />
+            </li>
+            <li>
+              <input type="checkbox" name="item" id="item" />
+              <span>Suco de Limão</span>
+              <img
+                src="./assets/icons/bin.svg"
+                alt="Excluir item"
+                title="Excluir item"
+              />
+            </li>
+          </ul>
+          <div class="item-delete hidden">
+            <img src="./assets/icons/warning-circle-filled.svg" alt="" />
+            <span>O item foi removido</span>
+            <img src="./assets/icons/delete-small.svg" alt="Item deletado" />
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>

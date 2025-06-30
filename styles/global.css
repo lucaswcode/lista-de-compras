@@ -22,8 +22,43 @@
   --paragraph: 500 1rem/1.25rem var(--font-family);
   --link: 500 0.875rem/1rem var(--font-family);
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg--primary);
+  color: inherit;
+}
+
+.container {
+  max-width: 39.1875rem;
+  padding-inline: 2rem;
+  margin: auto;
+
+  & h1 {
+    font: var(--title);
+  }
+
+  & label {
+    font: var(--label);
+  }
+
+  & span {
+    font: var(--paragraph);
+  }
+
+  & a {
+    text-decoration: none;
+    color: var(--color-brand);
+    font: var(--link);
+  }
+  & ul {
+    & li {
+      list-style: none;
+    }
+  }
 }
