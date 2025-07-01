@@ -28,8 +28,8 @@
           <div>
             <input
               type="text"
-              class="addItem"
-              id="addItem"
+              class="add-item"
+              id="add-item"
               placeholder="Adicionar um novo item"
             />
             <button type="submit" class="btnItem">Adicionar item</button>
@@ -37,6 +37,7 @@
         </div>
         <div class="list-wrapper">
           <ul role="listitem" id="list">
+            <!-- Item de exemplo            
             <li>
               <input type="checkbox" name="item" id="item" />
               <span>Pão de Forma</span>
@@ -46,23 +47,20 @@
                 title="Excluir item"
               />
             </li>
-            <li>
-              <input type="checkbox" name="item" id="item" />
-              <span>Suco de Limão</span>
-              <img
-                src="./assets/icons/bin.svg"
-                alt="Excluir item"
-                title="Excluir item"
-              />
-            </li>
+            -->
           </ul>
           <div class="item-delete hidden">
             <img src="./assets/icons/warning-circle-filled.svg" alt="" />
             <span>O item foi removido</span>
-            <img src="./assets/icons/delete-small.svg" alt="Item deletado" />
+            <img
+              src="./assets/icons/delete-small.svg"
+              alt="Item deletado"
+              class="close-message"
+            />
           </div>
         </div>
       </form>
     </main>
+    <script src="./scripts.js"></script>
   </body>
 </html>
